@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Open Sans', sans-serif;
+                background-color: #282c34;
+                color: #abb2bf;
+                margin: 0;
+                padding: 0;
+                overflow-x: hidden; /* Prevent horizontal scroll */
+            }
+            header {
+                background-color: #7c9ff1;
+                color: #ffffff;
+                padding: 15px 0;
+                text-align: center;
+                border-bottom: 4px solid #ffffff; 
+                position: relative;
+                top: 0;
+                left: 0;
+                width: 100%; 
+                height: 90vh;
+                box-sizing: border-box; 
+                z-index: 1000; 
+                display: flex;
+                flex-direction: column;
+                justify-content: center; 
+                align-items: center; 
+                background-image: url('QgnM.gif'); 
+                background-size: cover;
+                background-position: center;
+                font-family: 'Playfair Display', serif;
+            }
+            .main-content {
+                margin-top: 5vh; 
+                padding: 20px;
+                color: #ffffff;
+            }
+            nav {
+                text-align: center;
+                margin-top: 20px;
+            }
+            nav a {
+                margin: 0 15px;
+                text-decoration: none;
+                color: #61afef;
+                font-weight: bold;
+                transition: color 0.3s;
+            }
+            nav a:hover {
+                color: #e06c75;
+            }
+            #about {
+                background-image: url('background.png'); /* Background image for About section */
+                background-size: cover; /* Cover the entire section */
+                background-position: center; /* Center the image */
+                background-repeat: no-repeat;
+                color: #ffffff; 
+                padding: 40px 20px; 
+            }
+            #projects {
+                background-image: url('bg.jpg'); /* Background image for Projects section */
+                background-size: cover; /* Cover the entire section */
+                background-position: center; /* Center the image */
+                background-repeat: no-repeat; /* Prevent repeating */
+                color: #ffffff; /* Ensure text is readable */
+                padding: 40px 20px; /* Add padding */
+            }
+            .section {
+                margin: 20px 0;
+                padding: 20px;
+                background: #2c323c;
+                border-radius: 8px;
+                
+                box-shadow: 0px 4px 8px rgba(0,0,0,0.2); 
+                font-family: 'Open Sans', sans-serif;
+            }
+            
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            table tr {
+                border-bottom: 1px solid #df27ab;
+            }
+            table td {
+                padding: 10px;
+                vertical-align: top;
+            }
+            table td img {
+                max-width: 150px;
+                border-radius: 8px;
+            }
+            footer {
+                background-color: #db3a78b0;
+                color: #ffffff;
+                text-align: center;
+                padding: 10px 0;
+                margin-top: 20px;
+                border-top: 4px solid #ffffff; 
+                font-family: 'Open Sans', sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to My Portfolio</h1>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+    <div class="main-content">
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>Hello! I'm Hajistha, a dedicated Artificial Intelligence & Data Science Engineer with a strong focus on machine learning, data analysis, and web development. </p>
+            <p></p>I specialize in creating innovative solutions through technologies like Python, SQL, and Streamlit, and I'm passionate about leveraging data to drive impactful decisions.
+            </p>
+        </section>
+
+        <!-- <section id="projects" class="section">
+            <h2>Projects</h2>
+            <p>P R O J E C T S    U N D E R T A K E N</p>
+            <ul>
+                <li>Railway System Analysis - Python, DBMS</li>
+                <li>Dining Philosopher Problem - C</li>
+                <li>Maze Solver using BFS - Python</li>
+                <li>Contact Management System - Python, DBMS</li>
+            </ul>
+        </section>  df27ab-->
+        
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <table>
+                <tr>
+                    <td>
+                        <h3>Railway System Analysis</h3>
+                        <p>
+                            A system that analyzes various aspects of railway operations.
+                            <br><br><strong>Technologies Used:</strong>
+                            <ul>
+                                <li>Python</li>
+                                <li>Data Analytics</li>
+                            </ul>
+                        </p>
+                    </td>
+                    <td style="width: 200px; text-align: right;">
+                        <img src="RS.png" alt="Railway System Analysis">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Dining Philosopher Problem</h3>
+                        <p>
+                            A classic synchronization problem solved using C, demonstrating concepts of concurrency and deadlock avoidance.
+                            <br><br><strong>Technologies Used:</strong>
+                            <ul>
+                                <li>C</li>
+                                <li>CodeBlocks</li>
+                            </ul>
+                        </p>
+                    </td>
+                    <td style="width: 150px; text-align: right;">
+                        <img src="DP.png" alt="Dining Philosopher Problem">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Maze Solver</h3>
+                        <p>
+                            A Python application that solves mazes using the Breadth-First Search algorithm, finding the shortest path to the goal.
+                            <br><br><strong>Technologies Used:</strong>
+                            <ul>
+                                <li>Python</li>
+                                <li>Breadth-First-Search</li>
+                            </ul>
+                        </p>
+                    </td>
+                    <td style="width: 150px; text-align: right;">
+                        <img src="PS.png" alt="Maze Solver">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Contact Management System</h3>
+                        <p>
+                            A system to manage personal or business contacts, using Python for logic and a database for efficient storage and retrieval.
+                            <br><strong>Technologies Used:</strong>
+                            <ul>
+                                <li>Python</li>
+                                <li>Sql</li>
+                            </ul>
+                        </p>
+                    </td>
+                    <td style="width: 150px; text-align: right;">
+                        <img src="CMS.png" alt="Contact Management System">
+                    </td>
+                </tr>
+            </table>
+        </section>
+        
+
+    </div>
+
+    <footer>
+        <div id="contact" class="footer-contact">
+            <p>You can reach me at : <a href="mailto:hajistha09@gmail.com">hajistha09@email.com</a></p>
+            <p>Connect with me on : <a href="http://www.linkedin.com/in/hajistha-juhe-613105281" target="_blank">LinkedIn</a></p>
+            <p> Explore my GitHub repositories :<a href="https://github.com/Hajistha468" target="_blank">GitHub</a></p>
+        </div>
+        <!-- <p>&copy; 2024 Your Name</p> -->
+    </footer>
+</body>
+</html>
